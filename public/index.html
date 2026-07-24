@@ -341,26 +341,15 @@
     @media(min-width:768px){ .why-join-grid { padding: 0 4rem; } }
     @media(min-width:1024px){ .why-join-grid { grid-template-columns: 1fr 1fr; gap: 8rem; } }
 
-    /* ── Member badge card ───────────── */
-    .member-card {
-      background: #244a86; border-radius: 3rem;
-      padding: 3rem; text-align: center;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-      position: relative; overflow: hidden;
-    }
-    @media(min-width:768px){ .member-card { padding: 4rem; } }
-    .member-card-overlay {
-      position: absolute; inset: 0;
-      background: radial-gradient(circle at center, rgba(0,51,110,0.2), transparent);
-      opacity: 0.5;
-    }
-    .member-badge-img {
-      width: 14rem; height: 14rem; margin: 0 auto 2.5rem;
+    /* ── Collage ───────────── */
+   
+    .elite-collage {
+      width: 400px; height: 500px; margin: 0 auto 2.5rem; border-radius: 20px;
       transition: transform 0.7s;
       filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3));
       position: relative; z-index: 10;
     }
-    .member-card:hover .member-badge-img { transform: scale(1.1); }
+    .elite-collage:hover { transform: scale(1.1); }
 
     /* ── Glow blob ───────────────────── */
     .glow-blob {
@@ -622,12 +611,7 @@
 <div class="order-1 lg:order-2">
 <div class="member-card">
 <div class="member-card-overlay"></div>
-<img alt="Elite Run Club Badge" class="member-badge-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNbdyyZUZ-zFv9sI5ZbH8jUlLqn-thhwxzvtmbhbfrHjtFaT5SXaPaqnz9hZbDYMrmKBwKFzMhHNnqmi2beSFdGhWRjQ2itQdEw6avAlU3Giwxb7duCRYCemAgWndaxdZ7fzNIFwGHxjuoWSlAbz7c9cAVETQjNuprMpvSlX4fXMBHG4WSh6GV0LhA0OjdjWc40jvK6cFVFDj9LbGA1_KjMPEFkE5JEIwiFhW3B0ttssyzMksOz4WGgwtZVYsxfNwqOTt0xGufuDU">
-<h3 class="text-on-primary-container font-bold text-3xl mb-4 relative z-10">Official Member Status</h3>
-<p class="text-primary-fixed/80 mb-10 text-lg leading-relaxed relative z-10">Unlock exclusive gear, private channels, and advanced route tracking.</p>
-<button class="btn-member-kit">
-                            Get Your Member Kit
-                        </button>
+<img alt="Elite Run Club Badge" class="elite-collage" src="images/elite-collage.png">
 </div>
 </div>
 </div>
